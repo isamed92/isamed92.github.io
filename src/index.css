@@ -39,6 +39,38 @@ body {
   left: -16px;
 }
 
-.tab {
-  tab-size: 4;
+/* SKILLS */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+}
+
+.skill-name {
+  min-width: 100px;
+  font-family: var(--font-family-bold);
+}
+
+.skill-level {
+  background-color: gray;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.skill-level-bar {
+  height: 14px;
+  background-color: var(--color-yellow);
+  border-radius: 5px;
+}
+
+.skill-inner-text {
+  font-size: 10px;
+  text-align: right;
+  padding-right: 5px;
 }
