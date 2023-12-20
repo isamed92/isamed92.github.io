@@ -18,11 +18,12 @@ export const CustomNavbar: React.FC<CustomNavbarProps> = ({ setLocale }) => {
         <img
           src='assets/logo.svg'
           className='d-inline-block align-top'
+          width={250}
           alt='logo'
         />
       </Navbar.Brand>
 
-      <Nav className='mx-3'>
+      <Nav className='mx-3 mt-2'>
         <Button variant='outline-dark' onClick={setLocale}>
           <Message id='locale' />
         </Button>

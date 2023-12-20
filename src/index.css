@@ -1,8 +1,40 @@
+:root {
+  --font-family-sans-serif: 'Abhaya Libre', sans-serif;
+  --font-family-bold: 'Abhaya Libre bold', sans-serif;
+  --font-family-montserrat: 'Montserrat', sans-serif;
+  --color-yellow: #fcd536;
+}
 
-
+body {
+  font-family: var(--font-family-montserrat);
+}
 
 .navbar {
-    background-color: #f3f4f7;
-   
+  background-color: #f3f4f7;
+}
 
+.about-card {
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 16px 32px -17px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: 0px 16px 32px -17px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 0px 16px 32px -17px rgba(0, 0, 0, 0.61);
+}
+
+.title {
+  font-family: var(--font-family-bold);
+  position: relative;
+}
+
+.title-text {
+  position: absolute;
+  z-index: 1;
+}
+
+.rectangle {
+  background-color: var(--color-yellow);
+  width: 100px;
+  height: 30px;
+  position: relative;
+  left: -16px;
 }

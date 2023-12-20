@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { IntlProvider } from 'react-intl';
 import { LOCALES, messages } from './i18n';
-import { CustomNavbar } from './components';
+import { CustomNavbar, AboutMe } from './components';
 
 function App() {
   const [locale, setLocale] = useState(LOCALES.ENGLISH);
@@ -21,6 +21,7 @@ function App() {
       defaultLocale={LOCALES.ENGLISH}
     >
       <CustomNavbar setLocale={handleLocale} />
+      <AboutMe />
     </IntlProvider>
   );
 }

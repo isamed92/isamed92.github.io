@@ -3,20 +3,22 @@ import { LOCALES } from './locales';
 interface IMessages {
   [key: string]: {
     locale: string;
-    title: string;
-    description: string;
+    aboutTitle: string;
+    aboutText: string;
   };
 }
 
 export const messages: IMessages = {
   [LOCALES.ENGLISH]: {
     locale: 'EN',
-    title: 'Hello, World!',
-    description: 'This is a simple example of React Intl.',
+    aboutTitle: 'About me',
+    aboutText:
+      'A passionate software developer (web and mobile). I really enjoy teamwork in IT projects where I seek to deliver quality products with confidence, a sense of belonging and responsibility. I am looking for a company willing to offer me a position among its developers. In return, I would offer all commitment and ability to be a nice and friendly addition to the team.',
   },
   [LOCALES.SPANISH]: {
     locale: 'ES',
-    title: '¡Hola, Mundo!',
-    description: 'Este es un ejemplo sencillo de React Intl.',
+    aboutTitle: 'Sobre mí',
+    aboutText:
+      'Un apasionado del desarrollo de aplicaciones (web y mobile). Disfruto mucho del trabajo en equipo en proyectos informaticos donde busco entregar productos de calidad con confianza, sentido de pertenencia y responsabilidad. Estoy buscando una empresa dispuesta a ofrecerme una ubicación entre sus desarrolladores. A cambio, ofrecería todo compromiso y capacidad para ser una adición agradable y amigable para el equipo.',
   },
 };
