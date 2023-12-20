@@ -13,8 +13,14 @@ export const AboutMe: React.FC = () => {
               <Title id='aboutTitle' />
             </Card.Title>
             <Card.Text className='d-flex flex-column'>
-              <Message id='aboutText' />
-              <br />
+              <span>
+                &emsp;&ensp;
+                <Message id='aboutText1' />
+              </span>
+              <span>
+                &emsp;&ensp;
+                <Message id='aboutText2' />
+              </span>
               <img
                 src='assets/sign.png'
                 alt='sign'

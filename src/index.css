@@ -38,3 +38,7 @@ body {
   position: relative;
   left: -16px;
 }
+
+.tab {
+  tab-size: 4;
+}
