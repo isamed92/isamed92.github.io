@@ -6,6 +6,7 @@ interface IMessages {
     aboutTitle: string;
     aboutText1: string;
     aboutText2: string;
+    seniority: string;
     currentProfile: string;
     skillsTitle: string;
     skillLevelExpert: string;
@@ -18,6 +19,7 @@ interface IMessages {
 export const messages: IMessages = {
   [LOCALES.ENGLISH]: {
     locale: 'EN',
+    seniority: 'Senior',
     currentProfile: 'Frontend/Mobile Developer',
     aboutTitle: 'About me',
     aboutText1:
@@ -32,6 +34,7 @@ export const messages: IMessages = {
   },
   [LOCALES.SPANISH]: {
     locale: 'ES',
+    seniority: 'Senior',
     currentProfile: 'Desarrollador Frontend/Mobile',
     aboutTitle: 'Sobre mí',
     aboutText1:

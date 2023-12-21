@@ -1,6 +1,5 @@
 :root {
-  --font-family-sans-serif: 'Abhaya Libre', sans-serif;
-  --font-family-bold: 'Abhaya Libre bold', sans-serif;
+  --font-family-sans-serif: 'Abhaya Libre', serif;
   --font-family-montserrat: 'Montserrat', sans-serif;
   --color-yellow: #fcd536;
 }
@@ -22,7 +21,7 @@ body {
 }
 
 .title {
-  font-family: var(--font-family-bold);
+  font-weight: bold;
   position: relative;
 }
 
@@ -37,6 +36,35 @@ body {
   height: 30px;
   position: relative;
   left: -16px;
+}
+
+.footer {
+  background-color: #191919;
+  border-top: '1px solid #E7E7E7';
+  height: 100px;
+  text-align: 'center';
+  padding: '20px';
+  position: 'fixed';
+  left: '0';
+  bottom: '0';
+  width: '100%';
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.link {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 14px;
 }
 
 /* SKILLS */
@@ -54,7 +82,6 @@ body {
 
 .skill-name {
   min-width: 100px;
-  font-family: var(--font-family-bold);
 }
 
 .skill-level {
