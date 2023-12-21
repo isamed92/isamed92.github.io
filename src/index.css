@@ -101,3 +101,12 @@ body {
   text-align: right;
   padding-right: 5px;
 }
+
+/* EXPERIENCE */
+.experience_title {
+  font-weight: bold;
+}
+.experience_duration {
+  font-size: 14px;
+  color: gray;
+}

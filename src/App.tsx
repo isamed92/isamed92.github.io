@@ -1,7 +1,14 @@
 import { useState } from 'react';
 import { IntlProvider } from 'react-intl';
 import { LOCALES, messages } from './i18n';
-import { CustomNavbar, AboutMe, Skills, Footer, Space } from './components';
+import {
+  CustomNavbar,
+  AboutMe,
+  Skills,
+  Footer,
+  Space,
+  Experience,
+} from './components';
 import { Message } from './helpers';
 import { Col, Container, Row } from 'react-bootstrap';
 
@@ -37,6 +44,13 @@ function App() {
           </Col>
           <Col>
             <Skills />
+          </Col>
+        </Row>
+      </Container>
+      <Container>
+        <Row>
+          <Col>
+            <Experience />
           </Col>
         </Row>
       </Container>
