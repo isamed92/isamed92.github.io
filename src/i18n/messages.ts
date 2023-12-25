@@ -26,6 +26,12 @@ interface IMessages {
     moodleDuration: string;
     rollingDescription: string;
     rollingDuration: string;
+    utnCarrer: string;
+    utnDuration: string;
+    cefCarrer: string;
+    cefDuration: string;
+    averageTitle: string;
+    educationTitle: string;
   };
 }
 
@@ -63,6 +69,12 @@ export const messages: IMessages = {
     rollingDescription:
       'I taught online full-stack web programming classes, covering a curriculum from basic to intermediate levels, to a commission of approximately 25 students.',
     rollingDuration: 'June 20 - September 20',
+    utnCarrer: 'Information Systems Engineering',
+    utnDuration: '2011 - Present',
+    cefCarrer: 'Economic Sciences',
+    cefDuration: '1998 - 2010',
+    averageTitle: 'Average',
+    educationTitle: 'Education',
   },
   [LOCALES.SPANISH]: {
     locale: 'ES',
@@ -97,5 +109,11 @@ export const messages: IMessages = {
     rollingDescription:
       'Impartí clases en línea de programación web full-stack, abarcando un currículo desde niveles básicos hasta intermedios, a una comisión de aproximadamente 25 estudiantes.',
     rollingDuration: 'Junio 20 - Septiembre 20',
+    utnCarrer: 'Ingeniería en Sistemas de Información',
+    utnDuration: '2011 - Presente',
+    cefCarrer: 'Ciencias Económicas',
+    cefDuration: '1998 - 2010',
+    averageTitle: 'Promedio',
+    educationTitle: 'Educación',
   },
 };

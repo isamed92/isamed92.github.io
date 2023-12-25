@@ -8,6 +8,7 @@ import {
   Footer,
   Space,
   Experience,
+  Education,
 } from './components';
 import { Message } from './helpers';
 import { Col, Container, Row } from 'react-bootstrap';
@@ -30,7 +31,8 @@ function App() {
       defaultLocale={LOCALES.ENGLISH}
     >
       <CustomNavbar setLocale={handleLocale} />
-      <h3 className='text-center mt-3'>
+      <Space height={100} />
+      <h3 className='text-center mt-2'>
         <span className='bold me-2'>
           <Message id='seniority' />
         </span>
@@ -39,18 +41,23 @@ function App() {
 
       <Container>
         <Row>
-          <Col>
+          <Col xs={12}>
             <AboutMe />
           </Col>
-          <Col>
-            <Skills />
-          </Col>
+          <Col xs={12}></Col>
         </Row>
       </Container>
-      <Container>
+      <Space height={50} />
+      <Container className='p-2'>
         <Row>
-          <Col>
+          <Col xs={12} lg={4} className=''>
             <Experience />
+          </Col>
+          <Col xs={12} lg={3} className=''>
+            <Education />
+          </Col>
+          <Col xs={12} lg={5} className=''>
+            <Skills />
           </Col>
         </Row>
       </Container>
