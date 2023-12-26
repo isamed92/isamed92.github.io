@@ -42,10 +42,10 @@ function App() {
 
       <Container className='mt-3'>
         <Row>
-          <Col xs={12} lg={6}>
+          <Col xs={12} lg={4} className='pt-4'>
             <AboutMe />
           </Col>
-          <Col xs={12} lg={6}>
+          <Col xs={12} lg={4} className='pt-4'>
             <ContactMe />
           </Col>
         </Row>

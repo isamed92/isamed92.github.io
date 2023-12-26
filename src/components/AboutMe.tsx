@@ -27,7 +27,7 @@ export const AboutMe: React.FC = () => {
               src='assets/sign-alter.png'
               alt='sign'
               width={200}
-              className='align-self-end'
+              className='align-self-end mt-5'
             />
           )}
           {intl.locale === 'es-ES' && (
@@ -35,7 +35,7 @@ export const AboutMe: React.FC = () => {
               src='assets/sign.png'
               alt='sign'
               width={200}
-              className='align-self-end'
+              className='align-self-end mt-5'
             />
           )}
         </Card.Text>

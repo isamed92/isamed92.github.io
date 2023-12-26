@@ -1,6 +1,6 @@
 import React from 'react';
 import { Title } from '.';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import { useIntl } from 'react-intl';
 
 export const ContactMe: React.FC = () => {
@@ -34,29 +34,22 @@ export const ContactMe: React.FC = () => {
     <Card className='about-card'>
       <Card.Body>
         <Card.Title>
-          <span>
-            <Title id='contactMe' />
-          </span>
+          <Title id='contactMe' />
         </Card.Title>
-        <Card.Text className='d-flex flex-column align-items-center'>
-          <Container>
-            {socialMediaLinks.map((socialMedia, index) => (
-              <Row key={index}>
-                <Col xs={1}>
-                  <img src={socialMedia.icon} alt={socialMedia.name} />
-                </Col>
-                <Col xs={11}>
-                  <a
-                    href={socialMedia.link}
-                    target='_blank'
-                    className='link-opacity-50-hover contact-link'
-                  >
-                    {socialMedia.name}
-                  </a>
-                </Col>
-              </Row>
-            ))}
-          </Container>
+        <Card.Text className='d-flex flex-column'>
+          {socialMediaLinks.map((socialMedia, index) => (
+            <span key={index}>
+              <img src={socialMedia.icon} alt={socialMedia.name} />
+              &emsp;
+              <a
+                href={socialMedia.link}
+                target='_blank'
+                className='link-opacity-50-hover contact-link'
+              >
+                {socialMedia.name}
+              </a>
+            </span>
+          ))}
         </Card.Text>
       </Card.Body>
     </Card>
