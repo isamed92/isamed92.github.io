@@ -1,3 +1,4 @@
+export { ContactMe } from './ContactMe';
 export { CustomNavbar } from './CustomNavbar';
 export { Space } from './Space';
 export { AboutMe } from './AboutMe';

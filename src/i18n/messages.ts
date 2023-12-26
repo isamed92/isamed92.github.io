@@ -32,6 +32,9 @@ interface IMessages {
     cefDuration: string;
     averageTitle: string;
     educationTitle: string;
+    contactMe: string;
+    color: string;
+    whatsappText: string;
   };
 }
 
@@ -75,6 +78,9 @@ export const messages: IMessages = {
     cefDuration: '1998 - 2010',
     averageTitle: 'Average',
     educationTitle: 'Education',
+    contactMe: 'Contact me',
+    color: '#7ABD53',
+    whatsappText: 'Hi, I am interested in your services',
   },
   [LOCALES.SPANISH]: {
     locale: 'ES',
@@ -115,5 +121,8 @@ export const messages: IMessages = {
     cefDuration: '1998 - 2010',
     averageTitle: 'Promedio',
     educationTitle: 'Educación',
+    contactMe: 'Contactame',
+    color: '#fcd536',
+    whatsappText: 'Hola, estoy interesado en tus servicios',
   },
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import { Space, Title } from '.';
 import { Container } from 'react-bootstrap';
 import { Message } from '../helpers';
+import { useIntl } from 'react-intl';
 
 interface Skill {
   name: string;
@@ -24,6 +25,7 @@ const skills: Skill[] = [
 ];
 
 export const Skills: React.FC = () => {
+  const intl = useIntl();
   const getText = (level: number) => {
     if (level >= 90) {
       return <Message id='skillLevelExpert' />;
@@ -47,7 +49,10 @@ export const Skills: React.FC = () => {
           <div className='skill-level'>
             <div
               className='skill-level-bar'
-              style={{ width: `${skill.level}%` }}
+              style={{
+                width: `${skill.level}%`,
+                backgroundColor: intl.formatMessage({ id: 'color' }),
+              }}
             >
               <div className='skill-inner-text'>{skill.level} %</div>
             </div>

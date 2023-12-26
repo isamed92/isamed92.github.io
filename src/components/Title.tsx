@@ -1,5 +1,6 @@
 import React from 'react';
 import { Message } from '../helpers';
+import { useIntl } from 'react-intl';
 
 type TitleProps = {
   id: string;
@@ -7,6 +8,8 @@ type TitleProps = {
 };
 
 export const Title: React.FC<TitleProps> = ({ id, size = 'medium' }) => {
+  const intl = useIntl();
+
   let fontSize = '1.5rem';
 
   if (size === 'small') {
@@ -20,7 +23,10 @@ export const Title: React.FC<TitleProps> = ({ id, size = 'medium' }) => {
       <div className='title-text'>
         <Message id={id} />
       </div>
-      <div className='rectangle' />
+      <div
+        className='rectangle'
+        style={{ backgroundColor: intl.formatMessage({ id: 'color' }) }}
+      />
     </div>
   );
 };

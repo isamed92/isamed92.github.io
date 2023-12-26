@@ -31,7 +31,6 @@ body {
 }
 
 .rectangle {
-  background-color: var(--color-yellow);
   width: 100px;
   height: 30px;
   position: relative;
@@ -60,6 +59,12 @@ body {
   color: #fff;
   font-size: 20px;
   text-decoration: none;
+}
+
+.contact-link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #3e3d3d;
 }
 
 .copyright {
@@ -92,7 +97,6 @@ body {
 
 .skill-level-bar {
   height: 14px;
-  background-color: var(--color-yellow);
   border-radius: 5px;
 }
 

@@ -9,6 +9,7 @@ import {
   Space,
   Experience,
   Education,
+  ContactMe,
 } from './components';
 import { Message } from './helpers';
 import { Col, Container, Row } from 'react-bootstrap';
@@ -39,12 +40,14 @@ function App() {
         <Message id='currentProfile' />
       </h3>
 
-      <Container>
+      <Container className='mt-3'>
         <Row>
-          <Col xs={12}>
+          <Col xs={12} lg={6}>
             <AboutMe />
           </Col>
-          <Col xs={12}></Col>
+          <Col xs={12} lg={6}>
+            <ContactMe />
+          </Col>
         </Row>
       </Container>
       <Space height={50} />
