@@ -80,7 +80,7 @@ export const messages: IMessages = {
     educationTitle: 'Education',
     contactMe: 'Contact me',
     color: '#7ABD53',
-    whatsappText: 'Hi, I am interested in your services',
+    whatsappText: 'Hi 👋🏻, I am interested in your services',
   },
   [LOCALES.SPANISH]: {
     locale: 'ES',
@@ -123,6 +123,6 @@ export const messages: IMessages = {
     educationTitle: 'Educación',
     contactMe: 'Contactame',
     color: '#fcd536',
-    whatsappText: 'Hola, estoy interesado en tus servicios',
+    whatsappText: 'Hola 👋🏻, estoy interesado en tus servicios',
   },
 };

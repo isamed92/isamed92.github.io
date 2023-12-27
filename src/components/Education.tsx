@@ -1,6 +1,7 @@
 import React from 'react';
 import { Message } from '../helpers';
 import { Title } from '.';
+import { Container } from 'react-bootstrap';
 
 interface Study {
   school: string;
@@ -34,7 +35,7 @@ export const Education: React.FC = () => {
       <br />
 
       {studies.map((study) => (
-        <div key={study.carrer}>
+        <Container key={study.carrer} fluid>
           <h5 className='bold'>
             <Message id={study.carrer} />
           </h5>
@@ -46,7 +47,7 @@ export const Education: React.FC = () => {
             <Message id={'averageTitle'} />: {study.average}
           </p>
           <hr />
-        </div>
+        </Container>
       ))}
     </>
   );

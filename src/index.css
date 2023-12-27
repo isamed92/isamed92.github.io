@@ -2,14 +2,35 @@
   --font-family-sans-serif: 'Abhaya Libre', serif;
   --font-family-montserrat: 'Montserrat', sans-serif;
   --color-yellow: #fcd536;
+  --color-gray: #e7e7e7;
 }
 
 body {
   font-family: var(--font-family-montserrat);
 }
 
+.main_body {
+  background-color: var(--color-gray);
+}
+
+.app_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #fff;
+  margin: 0 100px;
+}
+
+@media (max-width: 600px) {
+  .app_body {
+    margin: 0 15px;
+  }
+}
+
 .navbar {
-  background-color: #f3f4f7;
+  background-color: var(--color-gray);
 }
 
 .about-card {
@@ -77,7 +98,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0px 40px;
+  padding: 0px 0px;
 }
 
 .skill-item {
@@ -86,7 +107,7 @@ body {
 }
 
 .skill-name {
-  min-width: 100px;
+  min-width: 110px;
 }
 
 .skill-level {

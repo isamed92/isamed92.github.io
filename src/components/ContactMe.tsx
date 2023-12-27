@@ -21,7 +21,7 @@ export const ContactMe: React.FC = () => {
     {
       icon: 'assets/whatsapp.svg',
       name: 'Whatsapp',
-      link: `https://wa.me/5493816152792?${whatsappText}`,
+      link: `https://wa.me/5493816152792?text=${whatsappText}`,
     },
     {
       icon: 'assets/envelope-regular.svg',

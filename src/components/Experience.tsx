@@ -1,6 +1,7 @@
 import React from 'react';
 import { Title } from '.';
 import { Message } from '../helpers';
+import { Container } from 'react-bootstrap';
 
 interface Experience {
   company: string;
@@ -58,19 +59,26 @@ export const Experience: React.FC = () => {
     <div>
       <Title id='experienceTitle' />
       <br />
-      {experiences.map((experience, index) => (
-        <div key={index}>
-          <h5 className='experience_title'>{experience.company}</h5>
-          <span className='experience_duration'>
-            <Message id={experience.duration} />
-          </span>
+      <div className='d-flex flex-wrap'>
+        {experiences.map((experience, index) => (
+          <Container
+            key={index}
+            style={{ width: 300 }}
+            className=''
+            fluid={true}
+          >
+            <h5 className='experience_title'>{experience.company}</h5>
+            <span className='experience_duration'>
+              <Message id={experience.duration} />
+            </span>
 
-          <p>{experience.position}</p>
-          <p>
-            <Message id={experience.description} />
-          </p>
-        </div>
-      ))}
+            <p>{experience.position}</p>
+            <p>
+              <Message id={experience.description} />
+            </p>
+          </Container>
+        ))}
+      </div>
     </div>
   );
 };
