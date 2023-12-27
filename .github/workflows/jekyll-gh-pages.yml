@@ -32,7 +32,11 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Vite Github Pages Deployer
         uses: skywarth/vite-github-pages-deployer@v1.3.0
- 
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v3
+      - name: dump outputs
+        run:  echo "${{steps.deploy_to_pages.outputs.github_pages_url}}"
+
   # Deployment job
   deploy:
     environment:
