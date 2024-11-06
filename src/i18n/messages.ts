@@ -35,6 +35,7 @@ interface IMessages {
     contactMe: string;
     color: string;
     whatsappText: string;
+    notes: string;
   };
 }
 
@@ -81,6 +82,7 @@ export const messages: IMessages = {
     contactMe: 'Contact me',
     color: '#7ABD53',
     whatsappText: 'Hi 👋🏻, I am interested in your services',
+    notes: 'Notes',
   },
   [LOCALES.SPANISH]: {
     locale: 'ES',
@@ -124,5 +126,6 @@ export const messages: IMessages = {
     contactMe: 'Contactame',
     color: '#fcd536',
     whatsappText: 'Hola 👋🏻, estoy interesado en tus servicios',
+    notes: 'Notas',
   },
 };
