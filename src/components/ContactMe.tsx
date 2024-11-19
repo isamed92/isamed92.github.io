@@ -9,6 +9,11 @@ export const ContactMe: React.FC = () => {
   const whatsappText = intl.formatMessage({ id: 'whatsappText' });
   const socialMediaLinks = [
     {
+      icon: 'assets/location.svg',
+      name: 'Tucumán, Argentina',
+      link: '',
+    },
+    {
       icon: 'assets/linkedin.svg',
       name: 'LinkedIn',
       link: 'https://linkedin.com/in/isaias-medina/',
@@ -37,17 +42,21 @@ export const ContactMe: React.FC = () => {
           <Title id='contactMe' />
         </Card.Title>
         <Card.Text className='d-flex flex-column'>
-          {socialMediaLinks.map((socialMedia, index) => (
-            <span key={index}>
+          {socialMediaLinks.map((socialMedia) => (
+            <span key={socialMedia.name}>
               <img src={socialMedia.icon} alt={socialMedia.name} />
               &emsp;
-              <a
-                href={socialMedia.link}
-                target='_blank'
-                className='link-opacity-50-hover contact-link'
-              >
-                {socialMedia.name}
-              </a>
+              {socialMedia.link === '' ? (
+                <span style={{ fontSize: 14 }}>{socialMedia.name}</span>
+              ) : (
+                <a
+                  href={socialMedia.link}
+                  target='_blank'
+                  className='link-opacity-50-hover contact-link'
+                >
+                  {socialMedia.name}
+                </a>
+              )}
             </span>
           ))}
         </Card.Text>
