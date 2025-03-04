@@ -1,7 +1,8 @@
 import React from 'react';
-import { Navbar, Nav, Button } from 'react-bootstrap';
-import { Message } from '../helpers';
+import { Navbar, Nav } from 'react-bootstrap';
+// import { Message } from '../helpers';
 import { useIntl } from 'react-intl';
+import { LocaleButton } from './LocaleButton';
 
 interface CustomNavbarProps {
   setLocale: () => void;
@@ -16,17 +17,15 @@ export const CustomNavbar: React.FC<CustomNavbarProps> = ({ setLocale }) => {
       </Navbar.Brand>
 
       <Nav className='mx-3 mt-2'>
-        <Nav.Link href='#blog'>
+        {/* <Nav.Link href='#blog'>
           <Message id='notes' />
-        </Nav.Link>
+        </Nav.Link> */}
 
-        <Nav.Link href='#' className='mx-3'>
+        {/* <Nav.Link href='#' className='mx-3'>
           <img src='assets/download-solid.svg' width={25} alt='download' />
-        </Nav.Link>
+        </Nav.Link> */}
 
-        <Button variant='outline-dark' onClick={setLocale}>
-          <Message id='locale' />
-        </Button>
+        <LocaleButton setLocale={setLocale} />
       </Nav>
     </Navbar>
   );
