@@ -16,7 +16,7 @@ export const CustomNavbar: React.FC<CustomNavbarProps> = ({ setLocale }) => {
       </Navbar.Brand>
 
       <Nav className='mx-3 mt-2'>
-        <Nav.Link href='/blog'>
+        <Nav.Link href='#blog'>
           <Message id='notes' />
         </Nav.Link>
 
