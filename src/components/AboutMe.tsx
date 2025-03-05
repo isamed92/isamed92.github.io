@@ -24,7 +24,7 @@ export const AboutMe: React.FC = () => {
           </span>
           {intl.locale === 'en-US' && (
             <img
-              src='assets/sign-alter.png'
+              src='assets/png/sign-alter.png'
               alt='sign'
               width={200}
               className='align-self-end mt-5'
@@ -32,7 +32,7 @@ export const AboutMe: React.FC = () => {
           )}
           {intl.locale === 'es-ES' && (
             <img
-              src='assets/sign.png'
+              src='assets/png/sign.png'
               alt='sign'
               width={200}
               className='align-self-end mt-5'
