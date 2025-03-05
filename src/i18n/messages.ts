@@ -36,6 +36,8 @@ interface IMessages {
     color: string;
     whatsappText: string;
     notes: string;
+    pdfTitle: string;
+    pdfAuthor: string;
   };
 }
 
@@ -83,6 +85,8 @@ export const messages: IMessages = {
     color: '#7ABD53',
     whatsappText: 'Hi 👋🏻, I am interested in your services',
     notes: 'Notes',
+    pdfTitle: 'Isaias Medina - Resume',
+    pdfAuthor: 'Isaias Medina',
   },
   [LOCALES.SPANISH]: {
     locale: 'ES',
@@ -127,5 +131,7 @@ export const messages: IMessages = {
     color: '#fcd536',
     whatsappText: 'Hola 👋🏻, estoy interesado en tus servicios',
     notes: 'Notas',
+    pdfTitle: 'Isaias Medina - Curriculum Vitae',
+    pdfAuthor: 'Isaias Medina',
   },
 };

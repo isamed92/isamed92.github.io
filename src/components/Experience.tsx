@@ -60,9 +60,9 @@ export const Experience: React.FC = () => {
       <Title id='experienceTitle' />
       <br />
       <div className='d-flex flex-wrap'>
-        {experiences.map((experience, index) => (
+        {experiences.map((experience) => (
           <Container
-            key={index}
+            key={experience.company}
             style={{ width: 300 }}
             className=''
             fluid={true}

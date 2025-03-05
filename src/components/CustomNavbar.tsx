@@ -3,6 +3,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 // import { Message } from '../helpers';
 import { useIntl } from 'react-intl';
 import { LocaleButton } from './LocaleButton';
+import { LOCALES } from '../i18n';
 
 interface CustomNavbarProps {
   setLocale: () => void;
@@ -13,7 +14,7 @@ export const CustomNavbar: React.FC<CustomNavbarProps> = ({ setLocale }) => {
   return (
     <Navbar className='navbar justify-content-between fixed-top'>
       <Navbar.Brand className='d-flex flex-column'>
-        {intl.locale === 'en-US' ? <AlterLogo /> : <Logo />}
+        {intl.locale === LOCALES.ENGLISH ? <AlterLogo /> : <Logo />}
       </Navbar.Brand>
 
       <Nav className='mx-3 mt-2'>
@@ -21,7 +22,7 @@ export const CustomNavbar: React.FC<CustomNavbarProps> = ({ setLocale }) => {
           <Message id='notes' />
         </Nav.Link> */}
 
-        {/* <Nav.Link href='#' className='mx-3'>
+        {/* <Nav.Link href='#pdf' className='mx-3'>
           <img src='assets/download-solid.svg' width={25} alt='download' />
         </Nav.Link> */}
 
