@@ -3,7 +3,6 @@ import { Navbar, Nav } from 'react-bootstrap';
 // import { Message } from '../helpers';
 import { useIntl } from 'react-intl';
 import { LocaleButton } from './LocaleButton';
-import { LOCALES } from '../i18n';
 
 interface CustomNavbarProps {
   setLocale: () => void;
@@ -14,11 +13,7 @@ export const CustomNavbar: React.FC<CustomNavbarProps> = ({ setLocale }) => {
   return (
     <Navbar className='navbar justify-content-between fixed-top'>
       <Navbar.Brand className='d-flex flex-column'>
-        {intl.locale === LOCALES.ENGLISH ? (
-          <Logo locale='en' />
-        ) : (
-          <Logo locale='es' />
-        )}
+        <Logo locale={intl.locale.split('-')[0]} />
       </Navbar.Brand>
 
       <Nav className='mx-3 mt-2'>
@@ -42,7 +37,7 @@ interface Prop {
 
 const Logo: React.FC<Prop> = ({ locale }) => {
   return (
-    <>
+    <div className='d-flex flex-row m-0 p-0'>
       <img
         src={`assets/decoration-x-${locale}.svg`}
         className='d-inline-block mx-3'
@@ -55,6 +50,6 @@ const Logo: React.FC<Prop> = ({ locale }) => {
         width={200}
         alt='logo'
       />
-    </>
+    </div>
   );
 };
